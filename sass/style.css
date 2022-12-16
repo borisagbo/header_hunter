@@ -1,0 +1,117 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+body {
+  background: #ffffff;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+.button-container .button {
+  text-align: center;
+  width: 178px;
+  height: 41px;
+  border-radius: 30px;
+  border: 1px solid #000000;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  align-items: center;
+  font-family: "Montserrat", serif;
+}
+
+.button {
+  border-radius: 30px;
+  border: 1px solid #000000;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Montserrat", serif;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 45px 0;
+  padding: 0 84px;
+}
+.header .logo-nav-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.image-container {
+  width: 69px;
+  height: 69px;
+}
+.image-container .image {
+  object-fit: cover;
+}
+
+.list-group {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.list-group li {
+  font-family: "Montserrat", serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.list-group .selected {
+  text-underline: black;
+}
+
+/*# sourceMappingURL=style.css.map */
