@@ -3,9 +3,20 @@ body{
   background: #ffffff;
 }
 
+.menu-container{
+  background: black;
+}
 .button-container{
+  transform: translateX(300%);
+  transition-duration: 1s;
+  position: absolute;
   display: flex;
+  flex-direction: column;
+  top: 150px;
   gap: 20px;
+  /*
+  transform: translateY(-100%);
+  */
   .button{
     text-align: center;
     width: 178px;
@@ -36,8 +47,8 @@ body{
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  margin:45px 0;
-  padding: 0 84px;
+  margin:15px 0;
+  padding: 0 15px;
   .logo-nav-container{
     align-items: center;
     display: flex;
@@ -47,27 +58,94 @@ body{
   }
 
 .image-container {
-  width: 69px;
-  height: 69px;
+  width: 50px;
+  height: 50px;
   .image{
     object-fit: cover;
   }
 }
 
 .list-group{
-  display: flex;
+  transform: translateX(300%);
+  transition-duration: 1s;
+  position: absolute;
+  top: 75px;
   flex-direction: row;
   gap: 10px;
   li{
     font-family: "Montserrat", serif;
     font-size: 18px;
     font-weight:600;
-
-
-
   }
 
   .selected{
     text-underline: black;
   }
 }
+.bugger-menu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .menu-text{
+    font-family: 'Montserrat', serif;
+    margin-right: 5px;
+
+  }
+}
+.navbar-toggler{
+  display: grid!important;
+  height: min-content;
+  cursor: pointer;
+
+  .bar{
+    width: 40px;
+    height: 5px;
+    margin-bottom: 3px;
+    background: #000000;
+    border-radius: 10%;
+    transition: -4s;
+  }
+}
+input{
+display: none;
+}
+.logo-nav-container input:checked ~ .list-group {
+  transform: translateX(0%);
+}
+.logo-nav-container input:checked ~ .button-container {
+  transform: translateX(0%);
+
+}
+
+
+@media (min-width: 810px) {
+  .button-container{
+    flex-direction: row;
+  }
+  .logo-nav-container{
+    width: 100%;
+    justify-content: space-between;
+
+  }
+  .button-container{
+    display: flex;
+    position: relative;
+    transform: translateX(0);
+    top: 0;
+  }
+  .bugger-menu .navbar-toggler .bar{
+    display: none;
+  }
+  .menu-text{
+    display: none;
+  }
+  .list-group{
+    display: flex;
+    position: relative;
+    transform: translateX(0);
+    top: 0;
+
+  };
+}
+
