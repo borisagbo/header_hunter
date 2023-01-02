@@ -165,6 +165,22 @@ input {
   transform: translateX(0%);
 }
 
+.info-container h1 {
+  font-size: 39.04px;
+  font-weight: bold;
+}
+.info-container p {
+  font-size: 21.6px;
+  font-weight: 300;
+}
+.info-container .search_container {
+  background: #000;
+  height: 100px;
+}
+.info-container .search_container .search-input {
+  border: 2px solid #cc0909;
+  height: 100px;
+}
 @media (min-width: 810px) {
   .button-container {
     flex-direction: row;

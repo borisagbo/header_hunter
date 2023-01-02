@@ -118,6 +118,37 @@ display: none;
 
 }
 
+.info-container{
+
+  h1{
+    font-size: 39.04px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 21.6px;
+    font-weight: 300;
+  }
+   .search_container{
+     background: #000;
+     height: 100px;
+
+
+     .search-input{
+
+       border: 2px solid #cc0909;
+       height: 100px;
+
+
+     }
+     .search-button{
+
+
+     }
+   }
+}
+
+
+
 
 @media (min-width: 810px) {
   .button-container{
